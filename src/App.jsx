@@ -40,7 +40,7 @@ function App() {
   return (
     <div className='flex flex-col h-screen items-center justify-center'>
       {dia && (
-        <h1 className='text-white w-auto text-[5vw] animate-rainbow justify-center'>
+        <h1 className='text-white w-auto text-[10vw] font-bold animate-rainbow justify-center'>
           HOJE É {dia}
         </h1>
       )}
@@ -49,7 +49,7 @@ function App() {
           <video 
             src={videoUrl} 
             autoPlay 
-            className="w-[45vw] h-[75vh] object-cover"
+            className="w-full max-w-[450px] h-auto object-contain"
           />
         </div>
       )}
